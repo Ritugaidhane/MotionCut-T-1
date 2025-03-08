@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Bucket List</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">MY BUCKET LIST</div>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#add"> Add </a></li>
+                    <li><a href="#completed"> Completed </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <label class="switch">
+                <input type="checkbox" class="toggle" placeholder="Hlo">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="text1 ">
+                <h1> <span>DREAM IT</span> to <span>ACHIEVE IT</span></h1>
+                <p>Add, track, and achieve your dreams, one item</p>
+                <div class="buttons">
+                    <button class="b1" onclick="bucket()">Make a Bucket</button>
+                    <button class="b1">Completed</button>
+                    <button class="b1">In progress</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="add">
+            <div class="text2">
+                <h2>Things I Want to Do</h2>
+                <div class="addingitem">
+                    <ul id="list">
+                        <li><input class="checkbox" type="checkbox" placeholder="Check"> Travel to Japan</li>
+                        <li><input class="checkbox" type="checkbox" placeholder="Check"> Learn to play the guitar</li>
+                        <li><input class="checkbox" type="checkbox" placeholder="Check"> Go skydiving</li>
+                    </ul>
+                    <input type="text" id="newItem" placeholder="Add a new goal...">
+                    <button class="AddBtn" onclick="addItem()">Add Item</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
